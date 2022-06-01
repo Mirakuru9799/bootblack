@@ -1,2 +1,8 @@
-@import './common';
-@import './example';
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+@import './variables';
+@import './body';
+@import './reset';
