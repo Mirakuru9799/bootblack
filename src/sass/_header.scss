@@ -3,8 +3,27 @@
   flex-direction: row;
 }
 
-.menu-list {
+.logo-list {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.header-menu .header-item {
+  margin-right: 50px;
+  color: $secondary-text-color;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.header-item.link {
+  text-decoration: none;
 }
