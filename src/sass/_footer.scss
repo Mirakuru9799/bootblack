@@ -1,0 +1,46 @@
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: top;
+    
+    
+}
+
+.footer-logo{
+    margin: 5px;
+    margin-right: 20px;
+}
+
+
+
+
+
+.footer.footer {
+    display: flex; 
+    width: 100%;
+    height: 314px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.footer-item-list {
+    padding: auto;
+    width: 251px;
+}
+
+.address-1 {
+    padding-bottom: 20px;
+}
+
+.address-3 {
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.items-pad {
+    padding-bottom: 10px;
+}
