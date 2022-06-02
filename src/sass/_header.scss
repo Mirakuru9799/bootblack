@@ -148,6 +148,8 @@ header {
 
 .header-menu ul li {
   margin-right: 40px;
+  position: relative;
+  transition: all 0.3s ease-in;
 
   &:not(:last-child) {
     margin-right: 40px;
@@ -156,11 +158,52 @@ header {
 
 .header-menu ul li a {
   color: $secondary-text-color;
+  text-decoration: none;
+}
+
+// Стили Dropdown Menu
+
+.header-menu ul li ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 500px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease-in;
+}
+
+.header-menu ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.header-menu ul li ul li {
+  width: 250px;
+  padding: 10px 0;
+}
+
+.header-menu ul li .arrow-down {
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #111111;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.header-menu ul li:hover .arrow-down {
+  transform: rotate(180deg);
 }
 
 // Стили бургера
 
-.three {
+.three,
+.mobile-menu {
   display: none;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -205,7 +248,7 @@ header {
 
 .hamburger {
   padding: 5px;
-  z-index: 999;
+  z-index: 2;
   position: absolute;
   right: 20px;
   top: 20px;
