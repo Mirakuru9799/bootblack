@@ -232,29 +232,41 @@ header {
 .mobile-menu {
   background: black;
   transition: 0.5s;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   width: 100%;
   top: 0;
   right: 0;
   opacity: 0;
   .container-mobile {
-    display: flex;
+    display: block;
     color: white;
-    align-items: center;
-    justify-content: flex-start;
   }
   ul {
     li {
       list-style-type: none;
-      font-size: 30px;
-      padding: 10px;
-
+      font-size: 18px;
+      padding: 5px 0;
+      position: relative;
       a {
         color: #efefef;
+        text-decoration: none;
+      }
+      ul {
+        padding: 0 20px;
+        margin: 0;
+      }
+      div.click {
+        position: absolute;
+        top: 0;
+        right: 30%;
       }
     }
   }
+}
+
+.mobile-menu ul ul {
+  display: none;
 }
 
 .hamburger {
