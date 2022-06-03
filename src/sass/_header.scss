@@ -243,14 +243,17 @@ header {
     color: white;
   }
   ul {
+    padding: 0;
+    margin: 50px 30px;
     li {
       list-style-type: none;
-      font-size: 18px;
-      padding: 5px 0;
+      //padding: 5px 0;
+      margin: 15px 0;
       position: relative;
       a {
         color: #efefef;
         text-decoration: none;
+        font-size: 22px;
       }
       ul {
         padding: 0 20px;
@@ -258,11 +261,15 @@ header {
       }
       div.click {
         position: absolute;
-        top: 0;
+        top: 0%;
         right: 30%;
       }
     }
   }
+}
+
+.container-mobile ul ul li a {
+  font-size: 18px;
 }
 
 .mobile-menu ul ul {
