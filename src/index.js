@@ -18,3 +18,4 @@ $('.container-mobile div').click(function () {
     $('.plus', this).html('-');
   }
 });
+$('a[data-rel^=lightcase]').lightcase();
