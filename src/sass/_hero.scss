@@ -41,7 +41,13 @@
     }
   }
 }
-
+.first-screen-button {
+  width: 200px;
+  height: 100px;
+  margin: 50px 0;
+  display: inline-block;
+  border: solid 2px #000;
+}
 .doit-list {
   position: absolute;
   top: 90%;
@@ -101,6 +107,10 @@
     }
     @media screen and (min-width: 1280px) {
     }
+  }
+
+  ul li svg {
+    fill: $secondary-text-color;
   }
 
   ul li span {
