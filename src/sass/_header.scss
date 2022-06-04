@@ -231,12 +231,18 @@ header {
 }
 
 .mobile-menu {
-  background: black;
+  background-color: #111111;
   transition: 0.5s;
-  height: auto;
-  min-height: 100%;
   position: fixed;
   width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  transition: 0.5s;
   top: 0;
   right: 0;
   opacity: 0;
@@ -245,8 +251,7 @@ header {
     color: white;
   }
   ul {
-    padding: 0;
-    margin: 50px 30px;
+    padding: 50px 30px;
     li {
       list-style-type: none;
       //padding: 5px 0;
@@ -280,11 +285,11 @@ header {
 
 .hamburger {
   padding: 5px;
-  z-index: 2;
   position: fixed;
   right: 20px;
   top: 20px;
   background-color: #111111;
+  z-index: 1001;
   &:hover {
     cursor: pointer;
   }
