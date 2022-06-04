@@ -18,8 +18,8 @@ $('.container-mobile div').click(function () {
     $('.plus', this).html('-');
   }
 });
-<<<<<<< Updated upstream
-$('a[data-rel^=lightcase]').lightcase();
-=======
 
->>>>>>> Stashed changes
+$('a[data-rel^=lightcase]').lightcase();
+
+
+
