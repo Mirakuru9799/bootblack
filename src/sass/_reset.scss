@@ -1,7 +1,11 @@
+.noscroll {
+  overflow: hidden;
+  position: fixed;
+}
+
 img {
   display: block;
   max-width: 100%;
-  //height: auto;
 }
 
 body,
