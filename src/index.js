@@ -28,7 +28,7 @@ $('a[data-rel^=lightcase]').lightcase();
   var carousels = function () {
     $('.owl-carousel1').owlCarousel({
       loop: true,
-      autoplay: 1,
+      //autoplay: 1,
       center: true,
       margin: 0,
       responsiveClass: true,
