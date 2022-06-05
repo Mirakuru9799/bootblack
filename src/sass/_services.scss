@@ -1,5 +1,5 @@
 .services {
-  background-color: $secondary-pages-color;
+  //background-color: $secondary-pages-color;
 
   h2 {
     padding: 5% 5% 0;
@@ -10,6 +10,15 @@
     background-position: center center;
     border-color: transparent;
     border-style: solid;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      font-weight: 300;
+      font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   p {
@@ -18,15 +27,22 @@
     font-size: 22px;
     line-height: 1.55;
     font-weight: 400;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      font-weight: 300;
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
   ul {
     display: flex;
     flex-wrap: wrap;
-
     padding: 0;
     margin: 0;
     justify-content: center;
-    align-content: stretch;
   }
 
   ul li {
@@ -35,13 +51,14 @@
     background-color: $form-bgc;
     border: 0;
     border-radius: 10px;
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 10px;
     box-shadow: 0 8px 30px -7px #c9dff0;
   }
 
   ul li img {
     border-radius: 10px;
+    margin: 0;
   }
 
   ul li p {
@@ -50,23 +67,22 @@
     font-size: 24px;
     line-height: 1.15;
     font-weight: 400;
-    padding: 10px;
+    padding: 10px 0;
 
     &:nth-last-child(2) {
       color: $price-color;
       font-size: 24px;
       line-height: 1.3;
       font-weight: 500;
-      padding: 0 10px;
+      padding: 10px;
     }
   }
 
   ul li a {
-    display: block;
     width: 260px;
-    height: 55px;
-    display: table-cell;
-    vertical-align: middle;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     border: 1px solid $button-text-color;
@@ -79,7 +95,10 @@
     border-radius: 10px;
     border-color: transparent;
     border-style: solid;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
-      border-color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
   }
 }
