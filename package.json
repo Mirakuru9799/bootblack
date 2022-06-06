@@ -18,9 +18,11 @@
     "url": "https://github.com/Mirakuru9799/bootblack/issues"
   },
   "dependencies": {
+    "@parcel/resolver-default": "^2.6.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.6.0",
     "@parcel/transformer-sass": "^2.5.0",
     "parcel": "^2.5.0",
     "parcel-reporter-clean-dist": "^1.0.4",
