@@ -1,4 +1,14 @@
 .brands {
   min-height: 600px;
   background-color: $secondary-pages-color;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    width: 200px;
+    list-style-type: none;
+  }
 }
