@@ -20,7 +20,13 @@ $('.container-mobile div').click(function () {
   }
 });
 
-$('a[data-rel^=lightcase]').lightcase();
+$('a[data-rel^=lightcase]').lightcase({
+  shrinkFactor: 0.95,
+  maxWidth: 1920,
+  maxHeight: 1080,
+  swipe: true,
+  slideshow: true,
+});
 
 $('a[href^="#"]').on('click', function (event) {
   var anchor = $(this.getAttribute('href'));
