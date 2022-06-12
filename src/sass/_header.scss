@@ -131,7 +131,7 @@ header {
   width: 1280px;
   height: auto;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: none;
@@ -173,7 +173,7 @@ header {
   flex-wrap: wrap;
   position: absolute;
   width: 250px;
-  top: 0;
+  top: 20px;
   left: 0;
   visibility: hidden;
   opacity: 0;
@@ -187,7 +187,7 @@ header {
 .header-menu ul li ul li {
   width: 230px;
   font-size: 14px;
-  padding: 5px 0 5px 20px;
+  padding: 5px 0 10px 20px;
   background-color: #ffffff;
   transition: none;
   &:hover,
@@ -226,8 +226,7 @@ header {
 }
 
 .visible {
-  opacity: 1 !important;
-  transition: 0.5s;
+  display: block !important;
 }
 
 .mobile-menu {
@@ -238,7 +237,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
+  display: none;
   .container-mobile {
     .menu-container {
       padding: 60px 0;
