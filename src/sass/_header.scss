@@ -194,6 +194,9 @@ header {
   &:focus {
     transform: scale(1);
   }
+  a:hover {
+    color: $button-text-color;
+  }
 }
 
 .header-menu ul li .arrow-down {
