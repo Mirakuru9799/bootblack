@@ -45,21 +45,21 @@
   }
 
   a {
-    display: block;
-    width: 270px;
+    width: 360px;
     height: auto;
-    padding: 10px;
-    display: inline-block;
     text-align: center;
-    text-decoration: none;
-    border: 1px solid $button-text-color;
-    background-color: $button-text-color;
-    color: $button-bgc;
-    font-size: 15px;
-    line-height: 1.55;
-    font-weight: 600;
+    color: #321a03;
+    background-color: #f2b170;
+    border: 1px solid #0000;
     border-radius: 10px;
+    margin: 40px 0 0;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.55;
+    text-decoration: none;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    display: inline-block;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
         rgba(0, 0, 0, 0.23) 0px 3px 6px;
