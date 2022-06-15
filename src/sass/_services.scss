@@ -55,6 +55,23 @@
     box-shadow: 0 8px 30px -7px #c9dff0;
   }
 
+  ul li h3 {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  ul li h3 a {
+    text-decoration: none;
+    color: #282828;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.15;
+    &:hover {
+      color: $button-text-color;
+    }
+  }
+
   ul li img {
     border-radius: 10px;
     margin: 0;
@@ -63,7 +80,7 @@
   ul li p {
     text-align: center;
     color: $main-text-color;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.15;
     font-weight: 400;
     padding: 10px 0;
@@ -77,7 +94,7 @@
     }
   }
 
-  ul li a {
+  .services-link {
     width: 260px;
     height: auto;
     padding: 10px;
