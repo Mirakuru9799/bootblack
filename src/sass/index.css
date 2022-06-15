@@ -746,33 +746,31 @@ header {
           box-shadow: 0 8px 20px -4px #95abbb;
 }
 
-.owl-item .active {
+.works-testimonials .active {
   opacity: 0.3;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.owl-item .center {
+.works-testimonials .center {
   opacity: 1;
 }
 
-.owl-item .center .card-img-top {
+.works-testimonials .center .card-img-top {
   max-width: 100%;
-  height: 120px;
-  width: 120px;
 }
 
 @media (max-width: 767px) {
-  .owl-item .works-testimonials {
+  .works-testimonials .works-testimonials {
     margin-top: 20px;
   }
 }
 
-.owl-item .owl-carousel .owl-nav button.owl-next, .owl-item .owl-carousel .owl-nav button.owl-prev {
+.works-testimonials .owl-carousel .owl-nav button.owl-next, .works-testimonials .owl-carousel .owl-nav button.owl-prev {
   outline: 0;
 }
 
-.owl-item .owl-carousel button.owl-dot {
+.works-testimonials .owl-carousel button.owl-dot {
   outline: 0;
 }
 
@@ -833,6 +831,24 @@ header {
           box-shadow: 0 8px 30px -7px #c9dff0;
 }
 
+.services ul li h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.services ul li h3 a {
+  text-decoration: none;
+  color: #282828;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.services ul li h3 a:hover {
+  color: #f2b170;
+}
+
 .services ul li img {
   border-radius: 10px;
   margin: 0;
@@ -841,7 +857,7 @@ header {
 .services ul li p {
   text-align: center;
   color: #282828;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.15;
   font-weight: 400;
   padding: 10px 0;
@@ -855,7 +871,7 @@ header {
   padding: 10px;
 }
 
-.services ul li a {
+.services .services-link {
   width: 260px;
   height: auto;
   padding: 10px;
@@ -876,7 +892,7 @@ header {
   transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.services ul li a:hover {
+.services .services-link:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -1106,7 +1122,7 @@ header {
 }
 
 .repair .repair-materials ul li {
-  width: 45%;
+  width: 48%;
   margin: 0 20px 0 0;
   list-style-type: none;
 }
@@ -1222,20 +1238,18 @@ header {
           box-shadow: 0 8px 20px -4px #95abbb;
 }
 
-.owl-item .active {
+.reviews-testimonials .active {
   opacity: 0.3;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.owl-item .center {
+.reviews-testimonials .center {
   opacity: 1;
 }
 
-.owl-item .center .card-img-top {
+.reviews-testimonials .center .card-img-top {
   max-width: 100%;
-  height: 120px;
-  width: 120px;
 }
 
 @media (max-width: 767px) {
@@ -1408,7 +1422,6 @@ header {
 .contacts .map {
   height: 500px;
   padding: 0;
-  background-image: url("/src/images/map_cover.png");
   background-position: center center;
   position: relative;
 }
