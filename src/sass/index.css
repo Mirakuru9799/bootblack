@@ -500,9 +500,12 @@ header {
     line-height: 1.2;
   }
 }
+.works, .services, .delivery, .repair, .why-us, .brands, .reviews, .contacts {
+  background-image: url(/src/images/bgi.png);
+}
+
 .works {
   min-height: 600px;
-  background-color: #faf7f0;
   padding: 70px 0 0 0;
 }
 .works .works-list {
@@ -538,6 +541,10 @@ header {
   }
 }
 .works .works-list ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: calc(20% - 15px);
   list-style-type: none;
 }
@@ -556,21 +563,22 @@ header {
   fill: #0A0A0A;
 }
 .works .works-list ul li span {
-  width: 120px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-wrap: normal;
   color: #0A0A0A;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1.15;
   font-weight: 300;
-  text-align: center;
+  padding-top: 26px;
 }
 .works h2 {
   width: 70%;
   padding: 5% 0 0 0;
   color: #0A0A0A;
   font-size: 45px;
-  line-height: 1.3;
+  line-height: 1.15;
   font-weight: 400;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -653,11 +661,11 @@ header {
 }
 
 .services h2 {
-  padding: 5% 5% 0;
+  padding: 5% 0 0;
   color: #0A0A0A;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1.3;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
   background-position: center center;
   border-color: transparent;
   border-style: solid;
@@ -756,7 +764,7 @@ header {
 
 .delivery {
   min-height: 600px;
-  margin: 50px 0 0 0;
+  padding: 50px 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .delivery {
@@ -764,11 +772,11 @@ header {
   }
 }
 .delivery h2 {
-  width: 700px;
+  width: 370px;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.55;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
   margin-bottom: 50px;
   padding-top: 50px;
 }
@@ -778,12 +786,10 @@ header {
   }
 }
 .delivery p {
-  width: 700px;
   color: #0A0A0A;
-  font-size: 22px;
-  line-height: 1.35;
-  font-weight: 400;
-  margin-bottom: 50px;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .delivery p {
@@ -791,18 +797,17 @@ header {
   }
 }
 .delivery a {
-  width: 360px;
+  width: 230px;
   height: auto;
   text-align: center;
-  color: #321a03;
-  background-color: #f2b170;
+  color: #0A0A0A;
+  background-color: #FFD952;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 10px;
-  margin: 40px 0 0;
-  padding: 20px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.55;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.15;
   text-decoration: none;
   transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
   display: inline-block;
@@ -815,6 +820,37 @@ header {
     width: 100%;
   }
 }
+.delivery .delivery-bg {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .delivery .delivery-bg {
+    flex-wrap: wrap;
+  }
+}
+.delivery .delivery-info {
+  margin-left: 100px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .delivery .delivery-info {
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+.delivery .delivery-info p {
+  margin: 40px 0;
+}
+.delivery .delivery-info form button {
+  background-color: #FFD952;
+  color: #0A0A0A;
+  border: none;
+  border-radius: 5px;
+}
+
 .repair {
   min-height: 600px;
   background-color: #faf7f0;
@@ -835,7 +871,7 @@ header {
   }
 }
 .repair .repair-list ul li {
-  width: calc(20% - 15px);
+  width: calc(20% - 35px);
   list-style-type: none;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -852,12 +888,11 @@ header {
 .repair .repair-list ul li p {
   width: 100%;
   color: #0A0A0A;
-  line-height: 1.55;
+  line-height: 1.4;
   font-size: 16px;
   font-weight: 300;
   text-align: center;
   padding: 10px 20px;
-  text-transform: uppercase;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .repair .repair-list ul li p {
@@ -872,9 +907,9 @@ header {
 .repair .repair-list h2 {
   width: 800px;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.55;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
   margin-bottom: 50px;
   padding-top: 30px;
 }
@@ -890,9 +925,9 @@ header {
 .repair .repair-materials h2 {
   width: 800px;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.55;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
   margin-bottom: 50px;
   padding-top: 30px;
 }
@@ -964,11 +999,11 @@ header {
   min-height: 500px;
 }
 .reviews h2 {
-  padding: 5% 5% 0 5%;
+  padding: 5% 0 0 0;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.3;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .reviews h2 {
@@ -1059,9 +1094,9 @@ header {
 .why-us h2 {
   padding-top: 30px;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.3;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .why-us h2 {
@@ -1133,9 +1168,9 @@ header {
   color: #282828;
   margin-bottom: 50px;
   padding-top: 30px;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 1.55;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .brands h2 {
@@ -1178,9 +1213,9 @@ header {
 .contacts h2 {
   width: 700px;
   color: #0A0A0A;
-  font-size: 40px;
-  line-height: 1.55;
-  font-weight: 300;
+  font-size: 45px;
+  line-height: 1.15;
+  font-weight: 400;
   margin-bottom: 50px;
   padding-top: 50px;
 }
@@ -1191,10 +1226,10 @@ header {
 }
 .contacts .address-box {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 0;
+  left: 0;
   width: 30%;
-  border-radius: 10px;
+  border-bottom-right-radius: 80px 80px;
   padding: 30px;
   background-color: #ffffff;
   background-position: center center;
@@ -1213,7 +1248,7 @@ header {
   color: #2c3132;
   font-size: 18px;
   line-height: 1.3;
-  font-weight: 400;
+  font-weight: 300;
   border-color: transparent;
   border-style: solid;
 }
@@ -1270,12 +1305,15 @@ footer .container {
   margin: 0;
 }
 .footer-menu ul li {
-  margin: 0 0 20px 0;
+  margin: 0 0 14px 0;
 }
 .footer-menu ul li a {
   list-style-type: none;
   text-decoration: none;
   color: #0A0A0A;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-menu {
@@ -1283,12 +1321,11 @@ footer .container {
   }
 }
 .footer-adress address p {
-  font-family: "Montserrat", Arial, sans-serif;
   color: #0A0A0A;
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.45;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
 .footer-contacts {
@@ -1309,8 +1346,8 @@ footer .container {
   color: #0A0A0A;
   text-decoration: none;
   font-size: 18px;
-  line-height: 1.55;
-  font-weight: 400;
+  line-height: 1.14;
+  font-weight: 300;
 }
 .footer-contacts .whatsup a:nth-child(2) {
   color: #126c03;
@@ -1326,9 +1363,9 @@ footer .container {
   flex-direction: column;
   margin: 35px 0 0 0;
   color: #2c3132;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 .whatsapp-button-wrapper {
   position: fixed;
