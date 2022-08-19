@@ -1,5 +1,13 @@
-.works, .services, .delivery, .repair, .why-us, .brands, .reviews, .contacts {
-  background-image: url(/src/images/bgi.png);
+.works,
+.services,
+.delivery,
+.repair,
+.why-us,
+.brands,
+.reviews,
+.contacts {
+  background-image: url('/src/images/bgi.png');
+  background-repeat: repeat;
 }
 
 .works {
@@ -33,7 +41,7 @@
       justify-content: space-between;
       margin: 0;
       padding: 40px;
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 10px;
 
       @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -53,7 +61,6 @@
       justify-content: center;
       width: calc(100% / 5 - 15px);
       list-style-type: none;
-
 
       @media screen and (min-width: 320px) and (max-width: 767px) {
         max-width: 50%;
