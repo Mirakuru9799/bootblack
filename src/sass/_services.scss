@@ -3,6 +3,7 @@
 
   h2 {
     padding: 5% 0 0;
+    margin-bottom: 50px;
     color: $main-text-color;
     font-size: 45px;
     line-height: 1.15;
@@ -41,7 +42,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    justify-content: center;
+    //justify-content: space-between;
   }
 
   ul li {
@@ -53,6 +54,16 @@
     margin: 0 10px;
     padding: 10px;
     box-shadow: 0 8px 30px -7px #c9dff0;
+  }
+
+  ul li:hover .hidden-text {
+    opacity: 1;
+    transition: opacity 0.2s linear 0s;
+  }
+
+  ul li:hover .visible-block h2 {
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
   }
 
   ul li h3 {
@@ -101,20 +112,102 @@
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    border: 1px solid $button-text-color;
-    background-color: $button-text-color;
-    color: $button-bgc;
-    font-size: 15px;
-    line-height: 1.55;
-    font-weight: 600;
-    border-width: 1px;
+    border: 4px solid #ffd059;
+    color: #fdfdfd;
+    font-size: 20px;
+    line-height: 1.15;
+    font-weight: 300;
+    border-width: 3px;
     border-radius: 10px;
-    border-color: transparent;
-    border-style: solid;
+    //border-style: solid;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
         rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+  }
+
+  .services-card {
+    position: relative;
+  }
+  .visible-block {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    h2 {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.7;
+      position: absolute;
+      left: 0%;
+      top: 40%;
+      text-align: center;
+
+      //transform: translate(-50%, -50%);
+      //margin: 0 20% 0 20%;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  .hidden-text {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
+
+    .hidden-links {
+      position: absolute;
+      left: 15px;
+      bottom: 15px;
+
+      p {
+        display: flex;
+        justify-content: space-between;
+
+        color: #fdfdfd;
+        line-height: 1.15;
+
+        span {
+          font-size: 22px;
+        }
+
+        a {
+          color: #fdfdfd;
+          font-size: 16px;
+          line-height: 1.7;
+        }
+      }
+    }
+    h2 {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.7;
+      position: absolute;
+      left: 0%;
+      top: 40%;
+      text-align: center;
+
+      //transform: translate(-50%, -50%);
+      //margin: 0 20% 0 20%;
+      padding: 0;
+      width: 100%;
+    }
+    p {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.7;
     }
   }
 }

@@ -232,23 +232,24 @@ header {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  width: 250px;
+  max-width: 250px;
   top: 20px;
-  left: 0;
+  left: -20px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.6s ease-in;
+  transition: opacity 0.2s linear 0s;
+  background-color: #ffffff;
 }
 
 .header-menu ul li:hover ul {
   visibility: visible;
   opacity: 1;
+  transition: opacity 0.2s linear 0s;
 }
 
 .header-menu ul li ul li {
-  width: 230px;
-  padding: 5px 0 10px 20px;
-  background-color: #ffffff;
+  min-width: 250px;
+  padding: 5px 20px;
   transition: none;
 }
 .header-menu ul li ul li:hover, .header-menu ul li ul li:focus {
@@ -343,7 +344,7 @@ header {
 
 .hamburger {
   padding: 5px;
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 20px;
   background-color: #111111;
@@ -500,8 +501,16 @@ header {
     line-height: 1.2;
   }
 }
-.works, .services, .delivery, .repair, .why-us, .brands, .reviews, .contacts {
-  background-image: url(/src/images/bgi.png);
+.works,
+.services,
+.delivery,
+.repair,
+.why-us,
+.brands,
+.reviews,
+.contacts {
+  background-image: url("/src/images/bgi.png");
+  background-repeat: repeat;
 }
 
 .works {
@@ -531,7 +540,7 @@ header {
   justify-content: space-between;
   margin: 0;
   padding: 40px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -662,6 +671,7 @@ header {
 
 .services h2 {
   padding: 5% 0 0;
+  margin-bottom: 50px;
   color: #0A0A0A;
   font-size: 45px;
   line-height: 1.15;
@@ -693,7 +703,6 @@ header {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  justify-content: center;
 }
 .services ul li {
   list-style-type: none;
@@ -704,6 +713,14 @@ header {
   margin: 0 10px;
   padding: 10px;
   box-shadow: 0 8px 30px -7px #c9dff0;
+}
+.services ul li:hover .hidden-text {
+  opacity: 1;
+  transition: opacity 0.2s linear 0s;
+}
+.services ul li:hover .visible-block h2 {
+  opacity: 0;
+  transition: opacity 0.2s linear 0s;
 }
 .services ul li h3 {
   text-align: center;
@@ -746,20 +763,88 @@ header {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border: 1px solid #FFD952;
-  background-color: #FFD952;
-  color: #0A0A0A;
-  font-size: 15px;
-  line-height: 1.55;
-  font-weight: 600;
-  border-width: 1px;
+  border: 4px solid #ffd059;
+  color: #fdfdfd;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 300;
+  border-width: 3px;
   border-radius: 10px;
-  border-color: transparent;
-  border-style: solid;
   transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .services .services-link:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.services .services-card {
+  position: relative;
+}
+.services .visible-block {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.services .visible-block h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+.services .hidden-text {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s linear 0s;
+}
+.services .hidden-text .hidden-links {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.services .hidden-text .hidden-links p {
+  display: flex;
+  justify-content: space-between;
+  color: #fdfdfd;
+  line-height: 1.15;
+}
+.services .hidden-text .hidden-links p span {
+  font-size: 22px;
+}
+.services .hidden-text .hidden-links p a {
+  color: #fdfdfd;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.services .hidden-text h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.7;
+  position: absolute;
+  left: 0%;
+  top: 40%;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+.services .hidden-text p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 .delivery {
@@ -855,37 +940,85 @@ header {
   min-height: 600px;
   background-color: #faf7f0;
 }
-.repair .repair-list ul {
+.repair .repair-list ol {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-items: center;
   justify-content: space-between;
-  padding: 50px 35px 0 35px;
   margin: 0;
+  list-style: none;
+  border-bottom: 4px solid #ffd059;
+  counter-reset: timeline;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .repair .repair-list ul {
+  .repair .repair-list ol {
     flex-wrap: wrap;
     padding: 50px 0;
   }
 }
-.repair .repair-list ul li {
-  width: calc(20% - 35px);
-  list-style-type: none;
+.repair .repair-list ol li {
+  margin-left: -16px;
+  margin: 0;
+  padding: 40px 20px 40px 36px;
+  position: relative;
+}
+.repair .repair-list ol li:before, .repair .repair-list ol li:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: "";
+}
+.repair .repair-list ol li:before {
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  left: -30px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  margin: auto;
+}
+.repair .repair-list ol li:after {
+  height: 50px;
+  width: 50px;
+  left: -25px;
+  margin: auto;
+  border-radius: 100%;
+  background: #ddd;
+  counter-increment: timeline;
+  content: counter(timeline);
+  text-align: center;
+  line-height: 50px;
+  transform: scale(1);
+  transform-origin: center center;
+  box-shadow: 0 0 0 0px blue;
+  transition: transform 0.2s ease-in-out, box-shadow 0.15s 0.2s ease-in-out;
+}
+.repair .repair-list ol li:hover:after {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px blue;
+}
+.repair .repair-list ol li .border-left {
+  position: absolute;
+  width: 4px;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffd059;
+  border-bottom-left-radius: 50px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .repair .repair-list ul li {
+  .repair .repair-list ol li {
     max-width: 50%;
     width: 50%;
     padding: 0 0 20px 0;
     word-break: keep-all;
   }
-  .repair .repair-list ul li:last-child {
+  .repair .repair-list ol li:last-child {
     margin: 10px auto;
   }
 }
-.repair .repair-list ul li p {
+.repair .repair-list ol li p {
   width: 100%;
   color: #0A0A0A;
   line-height: 1.4;
@@ -895,13 +1028,13 @@ header {
   padding: 10px 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .repair .repair-list ul li p {
+  .repair .repair-list ol li p {
     width: 100%;
     text-transform: none;
     padding: 10px;
   }
 }
-.repair .repair-list ul li img {
+.repair .repair-list ol li img {
   margin: 0 auto;
 }
 .repair .repair-list h2 {
@@ -953,7 +1086,6 @@ header {
 }
 .repair .repair-materials ul {
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
@@ -976,16 +1108,16 @@ header {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .repair .repair-materials ul li {
     width: 100%;
-    margin: 50px 0;
+    margin: 30px 0;
   }
 }
 .repair .repair-materials ul li h3 {
-  width: 800px;
+  width: auto;
   color: #0A0A0A;
   font-size: 24px;
-  line-height: 1.55;
+  line-height: 1.4;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin: 0 0 15px 0;
   padding-top: 30px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1088,8 +1220,6 @@ header {
 .why-us {
   position: relative;
   min-height: 600px;
-  background-size: cover;
-  background-position: center center;
 }
 .why-us h2 {
   padding-top: 30px;
@@ -1164,6 +1294,10 @@ header {
   min-height: 400px;
   background-color: #faf7f0;
 }
+.brands .brands-lines {
+  border-top: 4px solid #ffd059;
+  border-bottom: 4px solid #ffd059;
+}
 .brands h2 {
   color: #282828;
   margin-bottom: 50px;
@@ -1179,15 +1313,14 @@ header {
 }
 .brands ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
+  justify-content: space-around;
 }
 .brands ul li {
-  width: calc(25% - 30px);
   list-style-type: none;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .brands ul li {
@@ -1200,10 +1333,11 @@ header {
 }
 .brands ul li svg {
   display: inline-block;
-  max-width: 200px;
-  max-height: 200px;
 }
 
+.contacts {
+  padding-bottom: 100px;
+}
 .contacts .map {
   height: 500px;
   padding: 0;
