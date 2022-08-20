@@ -1254,7 +1254,7 @@ header {
   }
 }
 .why-us ul li {
-  width: 60%;
+  width: 50%;
   margin: 25px 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1265,9 +1265,11 @@ header {
 }
 .why-us ul h3 {
   color: #0A0A0A;
-  font-size: 22px;
-  line-height: 1.15;
-  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.13;
+  font-weight: 400;
+  border-bottom: 4px solid #ffd059;
+  padding: 0 0 15px 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .why-us ul h3 {
@@ -1276,22 +1278,22 @@ header {
 }
 .why-us ul p {
   color: #0A0A0A;
-  font-size: 16px;
-  line-height: 1.35;
-  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
   padding-top: 10px;
 }
-.why-us img {
+.why-us .why-us-cover {
   max-width: 65%;
   margin-left: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .why-us img {
+  .why-us .why-us-cover {
     width: 100%;
   }
 }
 .brands {
-  min-height: 400px;
+  min-height: 300px;
   background-color: #faf7f0;
 }
 .brands .brands-lines {
@@ -1313,14 +1315,15 @@ header {
 }
 .brands ul {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
+  justify-content: center;
 }
 .brands ul li {
+  width: calc(14.2857142857% - 40px);
   list-style-type: none;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .brands ul li {
@@ -1331,8 +1334,11 @@ header {
     padding: 0;
   }
 }
-.brands ul li svg {
-  display: inline-block;
+.brands ul li img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts {
