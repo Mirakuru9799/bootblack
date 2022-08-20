@@ -42,7 +42,7 @@
     }
 
     li {
-      width: 60%;
+      width: 50%;
       margin: 25px 10px;
 
       @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -55,11 +55,16 @@
       }
     }
 
+    .why-us-icon {
+    }
+
     h3 {
       color: $main-text-color;
-      font-size: 22px;
-      line-height: 1.15;
-      font-weight: 500;
+      font-size: 25px;
+      line-height: 1.13;
+      font-weight: 400;
+      border-bottom: 4px solid #ffd059;
+      padding: 0 0 15px 0;
 
       @media screen and (min-width: 320px) and (max-width: 767px) {
         font-size: 20px;
@@ -72,14 +77,14 @@
 
     p {
       color: $main-text-color;
-      font-size: 16px;
-      line-height: 1.35;
-      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 300;
       padding-top: 10px;
     }
   }
 
-  img {
+  .why-us-cover {
     max-width: 65%;
     margin-left: auto;
 
