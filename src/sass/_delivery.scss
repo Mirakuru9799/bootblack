@@ -1,6 +1,6 @@
 .delivery {
   min-height: 600px;
-  padding:50px 0;
+  padding: 50px 0;
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-position: center center;
@@ -10,69 +10,7 @@
   @media screen and (min-width: 1280px) {
   }
 
-  h2 {
-    width: 370px;
-    color: $main-text-color;
-    font-size: 45px;
-    line-height: 1.15;
-    font-weight: 400;
-    margin-bottom: 50px;
-    padding-top: 50px;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      width: 100%;
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1280px) {
-    }
-  }
-
-  p {
-    color: $main-text-color;
-    font-size: 24px;
-    line-height: 1.4;
-    font-weight: 300;
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      width: 100%;
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1280px) {
-    }
-  }
-
-  a {
-    width: 230px;
-    height: auto;
-    text-align: center;
-    color: $main-text-color;
-    background-color: $button-text-color;
-    border: 1px solid #0000;
-    border-radius: 10px;
-    //margin: 40px 0 0;
-    padding: 15px;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.15;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
-    display: inline-block;
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-        rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-      width: 100%;
-    }
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1280px) {
-    }
-  }
-  
-  & .delivery-bg {
+  .delivery-bg {
     background-color: #ffffff;
     border-radius: 10px;
     box-sizing: border-box;
@@ -87,8 +25,10 @@
     }
   }
 
-  & .delivery-info {
-      margin-left: 100px;
+  .delivery-info {
+    margin-left: 100px;
+    box-sizing: border-box;
+    padding: 0 45px 0 0;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
       margin: 0;
@@ -99,15 +39,97 @@
     @media screen and (min-width: 1280px) {
     }
 
-    p {
-      margin: 40px 0;
+    h2 {
+      width: 370px;
+      color: $main-text-color;
+      font-size: 45px;
+      line-height: 1.15;
+      font-weight: 400;
+      margin-bottom: 50px;
+      padding-top: 50px;
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1280px) {
+      }
     }
+
+    p {
+      color: $main-text-color;
+      font-size: 24px;
+      line-height: 1.4;
+      font-weight: 300;
+      margin: 40px 0;
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1280px) {
+      }
+    }
+
+    a {
+      width: 230px;
+      height: auto;
+      text-align: center;
+      color: $main-text-color;
+      background-color: $button-text-color;
+      border: 1px solid #0000;
+      border-radius: 10px;
+      //margin: 40px 0 0;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.15;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+      display: inline-block;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1280px) {
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+
     form button {
       background-color: $button-text-color;
       color: $main-text-color;
       border: none;
-      border-radius: 5px;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.14;
+      padding: 15px 30px;
+    }
+
+    form input {
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 15px 30px;
+
+      &:focus-visible {
+        outline: none;
+      }
     }
   }
-
 }

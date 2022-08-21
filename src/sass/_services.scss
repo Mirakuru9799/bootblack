@@ -1,6 +1,4 @@
 .services {
-  //background-color: $secondary-pages-color;
-
   h2 {
     padding: 5% 0 0;
     margin-bottom: 50px;
@@ -42,7 +40,6 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    //justify-content: space-between;
   }
 
   ul li {
@@ -119,7 +116,6 @@
     font-weight: 300;
     border-width: 3px;
     border-radius: 10px;
-    //border-style: solid;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
@@ -146,9 +142,6 @@
       left: 0%;
       top: 40%;
       text-align: center;
-
-      //transform: translate(-50%, -50%);
-      //margin: 0 20% 0 20%;
       padding: 0;
       width: 100%;
     }
@@ -197,9 +190,6 @@
       left: 0%;
       top: 40%;
       text-align: center;
-
-      //transform: translate(-50%, -50%);
-      //margin: 0 20% 0 20%;
       padding: 0;
       width: 100%;
     }

@@ -1,13 +1,14 @@
-.first-screen .white{
-    color: #ffffff;
+.first-screen .white {
+  color: #ffffff;
 }
 
-.first-screen .black{
+.first-screen .black {
   color: #000000;
 }
 
 .first-screen {
   min-height: 640px;
+
   @media screen and (min-width: 320px) and (max-width: 767px) {
     background-image: none !important;
   }
@@ -83,12 +84,11 @@
     li {
       display: flex;
       flex-wrap: nowrap;
-
     }
 
-li:nth-child(2) {
-  margin-top: 25px;
-}
+    li:nth-child(2) {
+      margin-top: 25px;
+    }
 
     li span {
       display: inline-block;
