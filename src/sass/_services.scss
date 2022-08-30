@@ -1,7 +1,6 @@
 .services {
   h2 {
-    padding: 5% 0 0;
-    margin-bottom: 50px;
+    padding: 130px 0 70px;
     color: $main-text-color;
     font-size: 45px;
     line-height: 1.15;
@@ -12,6 +11,7 @@
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
       font-weight: 300;
+      text-align: center;
     }
     @media screen and (min-width: 768px) {
     }
@@ -40,17 +40,29 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   ul li {
     list-style-type: none;
-    padding: 25px;
     background-color: $form-bgc;
     border: 0;
     border-radius: 10px;
-    margin: 0 10px;
-    padding: 10px;
-    box-shadow: 0 8px 30px -7px #c9dff0;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin: 20px 0;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
 
   ul li:hover .hidden-text {
@@ -117,6 +129,13 @@
     border-width: 3px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      width: 270px;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
         rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -125,14 +144,23 @@
 
   .services-card {
     position: relative;
+    margin: 0 20px 20px 0;
   }
   .visible-block {
     position: relative;
-    width: 270px;
+    width: 290px;
     height: 270px;
     overflow: hidden;
     border-radius: 10px;
-
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      width: 300px;
+      height: 300px;
+      background-size: cover !important;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
     h2 {
       color: #ffffff;
       font-weight: 400;
@@ -166,7 +194,6 @@
       p {
         display: flex;
         justify-content: space-between;
-
         color: #fdfdfd;
         line-height: 1.15;
 

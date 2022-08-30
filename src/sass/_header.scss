@@ -16,114 +16,113 @@ header {
   }
   @media screen and (min-width: 1280px) {
   }
-}
-
-.header-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  img {
-    max-width: none;
-  }
-  p {
-    width: 234px;
-    padding: 20px;
-    font-size: 16px;
-    line-height: 1.15;
-    font-weight: 300;
-    color: $header-text-color;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    p {
-      font-size: 16px;
-      padding: 20px 0;
-    }
-
-    img {
-      max-width: 100%;
-      width: 150px;
-      height: auto;
-    }
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
-  }
-}
-.header-map {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 370px;
-  img {
-    max-width: none;
-  }
-  p {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    justify-content: center;
-
-    img {
-      display: none;
-    }
-    p {
-      padding: 20px 0;
-      text-align: center;
-    }
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
-  }
-}
-.header-contacts {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  img {
-    max-width: none;
-  }
-  p {
-    padding: 20px;
+  .header-logo {
     display: flex;
-    flex-wrap: wrap;
-  }
-  a:nth-child(1) {
-    font-weight: 300;
-    font-size: 22px;
-    color: $header-text-color;
-    text-decoration: none;
-  }
-  a:nth-child(2) {
-    color: $watsapp-button;
-  }
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     img {
-      width: 70px;
-      padding-right: 20px;
+      max-width: none;
     }
     p {
+      width: 210px;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 1.15;
+      font-weight: 300;
+      color: $header-text-color;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      justify-content: flex-start;
+      flex-direction: row;
+      text-align: left;
+      p {
+        font-size: 16px;
+        padding: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        width: 100px;
+        height: auto;
+      }
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
+  }
+  .header-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    img {
+      max-width: none;
+    }
+    p {
+      padding: 20px;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+
+      img {
+        display: none;
+      }
+      p {
+        padding: 20px 0;
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
+  }
+  .header-contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      max-width: none;
+    }
+    p {
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      padding: 20px 0;
     }
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
+    a:nth-child(1) {
+      font-weight: 300;
+      font-size: 22px;
+      color: $header-text-color;
+      text-decoration: none;
+    }
+    a:nth-child(2) {
+      color: $watsapp-button;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      justify-content: center;
+      img {
+        width: 70px;
+        padding-right: 20px;
+      }
+      p {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px 0;
+      }
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+    }
   }
 }
 
@@ -167,7 +166,7 @@ header {
 .header-menu ul li a {
   color: $secondary-text-color;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
 }
 .header-menu ul li ul li a {
@@ -298,7 +297,7 @@ header {
   padding: 5px;
   position: fixed;
   right: 20px;
-  top: 20px;
+  top: 35px;
   background-color: #111111;
   z-index: 1001;
   &:hover {
