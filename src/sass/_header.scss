@@ -43,7 +43,7 @@ header {
 
       img {
         max-width: 100%;
-        width: 100px;
+        //width: 100px;
         height: auto;
       }
     }
@@ -75,8 +75,9 @@ header {
         display: none;
       }
       p {
-        padding: 20px 0;
-        text-align: center;
+        // padding: 20px 0 5px 0;
+        // text-align: center;
+        display: none;
       }
     }
     @media screen and (min-width: 768px) {
@@ -102,6 +103,13 @@ header {
       font-size: 22px;
       color: $header-text-color;
       text-decoration: none;
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1280px) {
+      }
     }
     a:nth-child(2) {
       color: $watsapp-button;
@@ -111,6 +119,14 @@ header {
       img {
         width: 70px;
         padding-right: 20px;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+          width: 55px;
+        }
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1280px) {
+        }
       }
       p {
         display: flex;
