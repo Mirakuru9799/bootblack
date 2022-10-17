@@ -24,6 +24,7 @@
     padding: 40px;
     border-radius: 10px;
     font-weight: lighter;
+    line-height: 1.5;
     @media screen and (min-width: 320px) and (max-width: 767px) {
       padding: 20px;
       text-align: justify;
@@ -40,6 +41,7 @@
       padding: 5px 0;
       @media screen and (min-width: 320px) and (max-width: 767px) {
         padding: 10px 0;
+        line-height: 1.5;
       }
       @media screen and (min-width: 768px) {
       }
